@@ -1,9 +1,6 @@
 # Introduction
-Fork of Minko Gechev's (angular2-seed)[https://mgechev.github.io/angular2-seed/] project.
+Fork of Minko Gechev's [angular2-seed](https://mgechev.github.io/angular2-seed/) project.
 
-Aims to add:
+Adds a few small cusomizations:
 
-* SASS
-* tsc --> babel transpilation so that async await becomes available
-* material2 or similar
-* redux
+* Pre-built flex version of bootstrap 4 alpha (replaces the custom main.css)
