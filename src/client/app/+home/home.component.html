@@ -3,9 +3,15 @@
   Do you know any others? Add to the list yourself.
 </p>
 
-<form (submit)="addName()">
-  <input [(ngModel)]="newName" placeholder="Awesome Computer Scientist">
-  <button type="submit">Add</button>
+<form (submit)="addName()" class="container-fluid">
+  <div class="row">
+    <div class="col-xs-10 form-group">
+      <input [(ngModel)]="newName" type="text" placeholder="Awesome Computer Scientist" class="form-control">
+    </div>
+    <div class="col-xs-2">
+      <button type="submit" class="btn btn-success">Add</button>
+    </div>  
+  </div>
 </form>
 
 

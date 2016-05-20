@@ -19,6 +19,11 @@ export class ProjectConfig extends SeedConfig {
       // {src: 'lodash/lodash.min.js', inject: 'libs'},
     ];
 
+    // Replace Minko's custom global CSS with bootstrap 4.
+    this.APP_ASSETS = [
+      { src: `${this.CSS_SRC}/bootstrap.css`, inject: true, vendor: true }
+    ];
+
     const seedDependencies = this.NPM_DEPENDENCIES;
 
     this.NPM_DEPENDENCIES = seedDependencies.concat(additional_deps);
